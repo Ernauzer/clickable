@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Druk';
+    src: url('DrukText.woff2') format('woff2'),
+        url('DrukText.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NeueMachina';
+    src: url('NeueMachinaUltrabold.woff2') format('woff2'),
+        url('NeueMachinaUltrabold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NeueMachina';
+    src: url('NeueMachinaRegular.woff2') format('woff2'),
+        url('NeueMachinaRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Medium.woff2') format('woff2'),
+        url('Roboto-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
