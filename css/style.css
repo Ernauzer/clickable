@@ -496,7 +496,7 @@ body {
 @media (max-width: 1399px) {
     .img_like {
 	height: 70px;
-        transform: translateY(-43%);
+        transform: translateY(-45%);
     }
     .img_like:nth-child(2) {
     	left: 37px;
