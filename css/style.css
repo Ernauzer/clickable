@@ -216,7 +216,7 @@ body {
 }
 .main_text span:last-child {
     display: block;
-    padding-left: 45px;
+    padding-left: 120px;
 }
 .main_bonus_title {
     font-size: 48px;
@@ -265,14 +265,8 @@ body {
 .castle {
     position: absolute;
     z-index: -1;
-    right: -10%;
+    right: -3%;
     bottom: 0;
-    min-width: 752px;
-    min-height: 670px;
-    background-image: url(../img/castle.png);
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
 }
 
 /* btn */
@@ -387,7 +381,7 @@ body {
 }
 .footer_link {
     margin-right: 28px;
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 .footer_link:last-child {
     margin-right: 0;
@@ -436,6 +430,14 @@ body {
 .levitating_balls img {
     width: 100%;
     height: auto;
+}
+
+/* Transform animate */
+.main_bonus_title,
+.main_btn_container,
+.terms_conditions_container,
+.main_bonus_title_like_container {
+    transform: translate(-150%);
 }
 
 /* Media Query */
@@ -558,7 +560,7 @@ body {
         padding-left: 30px;
     }
     .main_text span:last-child {
-        padding-left: 68px;
+        padding-left: 80px;
     }
 }
 @media (max-width: 900px) {
@@ -629,8 +631,6 @@ body {
         top: 0;
     }
     .castle {
-        min-height: 595px;
-        background-image: url(../img/castle_320.png);
         left: 50%;
         top: 15%;
         -webkit-transform: translateX(-50%);
@@ -683,6 +683,10 @@ body {
     }
 }
 @media (max-width: 600px) {
+    .main_text span:last-child {
+        padding-left: 0;
+        text-align: right;
+    }
     .img_like {
     	height: 42px;
     }
@@ -696,17 +700,7 @@ body {
         max-width: 100%;
     }
     .castle {
-        min-width: 100%;
-        min-height: auto;
-        max-width: 318px;
-        max-height: 360px;
-        height: auto;
-        left: inherit;
         top: 22%;
-        right: -25px;
-        -webkit-transform: none;
-        -ms-transform: none;
-        transform: none;
     }
     .main_img {
         min-width: auto;

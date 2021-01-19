@@ -1,5 +1,5 @@
-const knight = document.querySelector('.main_img');
-const castle = document.querySelector('.castle');
+export const knight = document.querySelector('.main_img');
+export const castle = document.querySelector('.castle');
 const randomX = (num) => Math.floor(Math.random() * window.innerWidth / num);
 const randomY = (num) => Math.floor(Math.random() * window.innerHeight / num);
 export const levitatingBalls = (item, speed) => {
@@ -19,4 +19,13 @@ export const heroMove = event => {
         const castleSpeed = parseInt(castle.dataset.speed);
         castle.style.transform = `translateX(${Math.floor(x / castleSpeed)}px)`;
     }
+};
+export const fadeIn = (container) => {
+    let value = 4;
+    container.forEach(child => {
+        let speed = value * 100;
+        value++;
+        child.style.transition = `transform ${speed}ms`;
+        child.style.transform = `translateX(0)`;
+    });
 };

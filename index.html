@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
 
-    
+
     <title>Clickable</title>
 </head>
 
@@ -23,7 +23,13 @@
 
             <div class="main">
 
-                <div class="castle" data-speed="250"></div>
+                <div class="castle_block">
+                    <picture>
+                        <source media="(max-width: 900px)" srcset="./img/castle_900.png">
+                        <source media="(max-width: 600px)" srcset="./img/castle_320.png">
+                        <img src="./img/castle.png" alt="Knight" class="castle" data-speed="250">
+                    </picture>
+                </div>
 
                 <div class="header_logo_container">
                     <img src="./img/logo.svg" alt="" class="logo">
@@ -105,7 +111,6 @@
                     <div class="footer_child footer_social">
                         <div class="footer_wrapper">
                             <a href="" class="link footer_link footer_social_link link_18">
-                                <!-- <img src="img/social/18+.svg" alt="18+"> -->
                                 18+
                             </a>
                             <a href="" class="link footer_link footer_social_link">
@@ -116,13 +121,13 @@
 
                 </footer>
 
-                <div class="levitating_balls levitating_balls1" data-speed="80">
+                <div class="levitating_balls levitating_balls1" data-speed="70">
                     <img class="levitating_ball" src="./img/decorate/ball_sm.svg" alt="Levitating balls">
                 </div>
-                <div class="levitating_balls levitating_balls2" data-speed="70">
+                <div class="levitating_balls levitating_balls2" data-speed="60">
                     <img class="levitating_ball" src="./img/decorate/ball_md.svg" alt="Levitating balls">
                 </div>
-                <div class="levitating_balls levitating_balls3" data-speed="60">
+                <div class="levitating_balls levitating_balls3" data-speed="50">
                     <img class="levitating_ball" src="./img/decorate/ball_lg.svg" alt="Levitating balls">
                 </div>
             </div>
