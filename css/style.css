@@ -498,7 +498,7 @@ body {
 @media (max-width: 1399px) {
     .img_like {
 	height: 70px;
-        transform: translateY(-43%);
+        transform: translateY(-45%);
     }
     .img_like:nth-child(2) {
     	left: 37px;
@@ -689,6 +689,9 @@ body {
     }
     .img_like {
     	height: 42px;
+	-webkit-transform: translateY(-45%);
+	-ms-transform: translateY(-45%);
+	transform: translateY(-45%);
     }
     .img_like:nth-child(2) {
 	left: 19px;
@@ -781,13 +784,13 @@ body {
         padding-left: 50px;
     }
     .main_bonus_title_like::before {
-        left: 41px
+        left: 44px
     }
     .img_like:first-child {
         left: -3px;
     }
     .img_like:nth-child(2) {
-        left: 17px;
+        left: 19px;
     }
     .main_bonus_title {
         font-size: 24px;
