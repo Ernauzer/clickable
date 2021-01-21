@@ -314,6 +314,10 @@ body {
 .btn:focus + .btn_decorate {
     opacity: 0;
 }
+.btn:disabled {
+    background: #000;
+    color: #eaeaea;
+}
 .btn_decorate {
     display: block;
     position: absolute;
@@ -438,6 +442,47 @@ body {
 .terms_conditions_container,
 .main_bonus_title_like_container {
     transform: translate(-150%);
+}
+
+/* Heart animate */
+
+.heart_container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+.heart_container._active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
+}
+.heart_img {
+    position: absolute;
+    bottom: 0;
+    left: 0;   
+    height: auto;
+    opacity: 0;
+}
+.heart_container._active .heart_img {
+    animation-timing-function: linear;
+    animation-name: heartAnimate;
+}
+@keyframes heartAnimate {
+    0% {
+        bottom: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        bottom: 100vh;
+        opacity: 0;
+    }
 }
 
 /* Media Query */
