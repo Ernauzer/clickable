@@ -15,7 +15,7 @@ const createImgLike = imgContainer => {
         let randomPosition = Math.floor(Math.random() * window.innerWidth) + 1;
         let img = document.createElement('img');
         img.classList.add('heart_img')
-        img.src = '../img/decorate/like.svg';
+        img.src = '/img/decorate/like.svg';
         img.width = imgWidth;
         img.style.left = `${randomPosition}px`;
         img.style.animationDelay = animDelay + 'ms';
