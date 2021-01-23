@@ -715,6 +715,14 @@ body {
     }
 }
 @media (max-width: 900px) {
+    .pop-up_btn {
+        font-size: 17px;
+    }
+    .pop-up_title {
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
     .link_18 {
         width: 27px;
         height: 27px;
@@ -834,9 +842,23 @@ body {
     }
 }
 @media (max-width: 600px) {
+    .pop-up_content {
+        padding: 20px 30px;
+        background-color: rgb(255, 255, 255);
+    }
+    .pop-up_container {
+        height: 250px;
+    }
+    .pop-up_title {
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
     .main_text span:last-child {
         padding-left: 0;
         text-align: right;
+    }
+    .pop-up_input,.pop-up_btn {
+        border: 1px solid rgba(0, 0, 0, 0.83);
     }
     .img_like {
     	height: 42px;
