@@ -502,10 +502,15 @@ body {
     align-items: center;
     z-index: 50;
 }
+.pop-up_wrapper {
+    width: 100%;
+}
 .pop-up_container {
     color: rgba(0, 0, 0, 0.83);
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     height: 300px;
+    margin: 0 auto;
 }
 .pop-up_content {
     position: relative;
